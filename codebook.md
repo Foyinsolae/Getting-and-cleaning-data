@@ -7,9 +7,9 @@ output: html_document
 
 #GETTING AND CLEANING DATA WEEK 4 
 
-#Description This code book summarizes the data and variables in tidyData.txt -- this is the output of the Week 4 project in the JHU course Getting & Cleaning Data while providing information on the Data Set and Attributes used from the original study
+#Description This code book summarizes the data and variables in secTidy.txt -- this is the output of the Week 4 project in the JHU course Getting & Cleaning Data while providing information on the Data Set and Attributes used from the original study
 
-#STuDY INFORMATION
+#STUDY INFORMATION
 
 ##Information on Data Set The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
@@ -24,7 +24,8 @@ Its activity label.
 An identifier of the subject who carried out the experiment.
 #INFORMATION ON RUN ANALYSIS SCRIPT
 
-##GOALS OF RUNANALYSIS SCRIPT Script was designed to: Input UCI HAR Dataset downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 1. Merge the training and the test sets to create one data set. 2. Extract only the measurements on the mean and standard deviation for each measurement. 3. Use descriptive activity names to name the activities in the data set 4. Appropriately label the data set with descriptive activity names. 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+##GOALS OF RUNANALYSIS SCRIPT Script was designed to: Input UCI HAR Dataset downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+1. Merge the training and the test sets to create one data set. 2. Extract only the measurements on the mean and standard deviation for each measurement. 3. Use descriptive activity names to name the activities in the data set 4. Appropriately label the data set with descriptive activity names. 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 1. MERGING TRAINING & TEST SETS
 The following text files were imported and merged. Column names were assigned at the time each file was imported and prior to merge. Files were imported individually and applicable files were then merged into sets, first all files in the TRAINING set (_train.txt) then all files in the TEST set (_test.txt). This was done prior to merging the two sets into one larger data set. The features and activity_labels files had column names assigned but were not merged and will be used later.
